@@ -1,6 +1,6 @@
 # docker-r-studio
 
-https://img.shields.io/docker/cloud/build/monahton/docker-r-studio
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/monahton/docker-r-studio)
 
 ## Description
 
