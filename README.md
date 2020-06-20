@@ -1,5 +1,7 @@
 # docker-r-studio
 
+https://img.shields.io/docker/cloud/build/monahton/docker-r-studio
+
 ## Description
 
 To allow usage of RStudio in a portable way using Docker Container
