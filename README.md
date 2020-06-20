@@ -12,7 +12,7 @@ To allow usage of RStudio in a portable way using Docker Container
 `docker build -t monahton/docker-r-studio .`
 
 ### Run Container
-`docker run --rm -p 8787:8787 -e USER=myself -e PASSWORD=guest -v /c/Users/39388/Desktop/udemy/docker_containers/R_Stu dio_Shared:/home/myself/r-studio monahton/docker-r-studio`
+`docker run --rm -p 8787:8787 -e USER=myself -e PASSWORD=guest -v /c/Users/39388/Desktop/udemy/docker_containers/R_Studio_Shared:/home/myself/r-studio monahton/docker-r-studio`
 
 ### Stop container
 `CTRL + CTRL`
@@ -22,8 +22,26 @@ To allow usage of RStudio in a portable way using Docker Container
 ### Push to Docker Hub
 `docker push monahton/docker-r-studio`
 
-### save docker image locally
+### Save docker image locally
 `docker save monahton/docker-r-studio > docker-r-studio.tar`
+
+### Delete an image
+`docker images`
+`docker rmi <image_id>`
+
+### Restore image from the local archive file
+`docker load --input docker-r-studio.tar`
+
+### View or enter into a running container from another terminal
+`docker images`
+`docker exec -it <image_id> bash
+This will make the terminal a bash shell from which we can view the content of the image
+
+### Save a new version of the image using Tags
+`docker tag monahton/docker-r-studio monahton/docker-r-studio:Version0.9`
+
+
+
 
 
 
